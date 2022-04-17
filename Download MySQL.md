@@ -51,3 +51,11 @@
 
 ![image](https://user-images.githubusercontent.com/30613069/163695551-a83581ef-ed8c-4255-bf0d-fef445a7d848.png)
 
+13. 샘플 db 가져오기
+13-1. 명령프롬포트 관리자 권한으로 실행
+
+13-2. PATH 설정
+C:\Windows\system32>SETX PATH "%PATH%:C:\Program Files\MySQL\MySQL Server 8.0\bin
+![image](https://user-images.githubusercontent.com/30613069/163695818-c621d783-66a9-4b1d-b932-03c4d70c4d37.png)
+
+13-3. 재부팅해야 먹힘
