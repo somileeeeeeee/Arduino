@@ -59,3 +59,17 @@ C:\Windows\system32>SETX PATH "%PATH%:C:\Program Files\MySQL\MySQL Server 8.0\bi
 ![image](https://user-images.githubusercontent.com/30613069/163695818-c621d783-66a9-4b1d-b932-03c4d70c4d37.png)
 
 13-3. 재부팅해야 먹힘
+
+13-4. employees 예제 파일 옮기기
+C:\Program Files\MySQL\employees
+![image](https://user-images.githubusercontent.com/30613069/163696045-0dbc023d-ce5a-4bbd-b01f-71195cde1a4d.png)
+![image](https://user-images.githubusercontent.com/30613069/163696063-1b62daff-ad6a-41c1-96cf-a1cccf470bf2.png)
+
+13-5. dir
+![image](https://user-images.githubusercontent.com/30613069/163696075-6ee15fd5-4f58-454e-b267-3a492ee180ef.png)
+
+13-6. 내 pc > 우클릭 > 속성 > 고급 > 환경 변수 > Path 확인
+아래의 경로가 Path에 있어야만 cmd 창이 먹힘
+C:\Program Files\MySQL\MySQL Server 8.0\bin
+![image](https://user-images.githubusercontent.com/30613069/163696134-a94b93c6-a2ac-4c82-bc04-819417b2913b.png)
+
