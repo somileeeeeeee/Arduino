@@ -73,3 +73,15 @@ C:\Program Files\MySQL\employees
 C:\Program Files\MySQL\MySQL Server 8.0\bin
 ![image](https://user-images.githubusercontent.com/30613069/163696134-a94b93c6-a2ac-4c82-bc04-819417b2913b.png)
 
+13-7. mysql 로 로그인
+C:\Windows\system32>cd C:\Program Files\MySQL\employees
+
+C:\Program Files\MySQL\employees>mysql -u root -p
+![image](https://user-images.githubusercontent.com/30613069/163700197-f96383b6-a117-4cf9-aecd-c1f4529aa968.png)
+
+13-8. 이관
+mysql> source employees.sql;
+
+![image](https://user-images.githubusercontent.com/30613069/163700379-19643d05-87fc-406f-a27e-9e33408d2c7d.png)
+
+
