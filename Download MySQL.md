@@ -38,3 +38,16 @@
 9. 로컬 PC 확인
 
 ![image](https://user-images.githubusercontent.com/30613069/163695492-49b55100-c248-492f-91c2-4eeaa095413b.png)
+
+10. MySQL > EDIT > Preference
+
+![image](https://user-images.githubusercontent.com/30613069/163695528-a3ba555c-6ce0-49a7-bbdd-c2aba39bd551.png)
+
+11. SAFE UPDATES 체크 해제
+
+![image](https://user-images.githubusercontent.com/30613069/163695543-386cf804-794a-4afa-a237-86100018610b.png)
+
+12. 대문자만 나오게 설정
+
+![image](https://user-images.githubusercontent.com/30613069/163695551-a83581ef-ed8c-4255-bf0d-fef445a7d848.png)
+
