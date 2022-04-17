@@ -36,4 +36,5 @@
 ![image](https://user-images.githubusercontent.com/30613069/163695480-5fa5c60a-1e44-47c6-933b-5ff7dd990473.pn
 
 9. 로컬 PC 확인
+
 ![image](https://user-images.githubusercontent.com/30613069/163695492-49b55100-c248-492f-91c2-4eeaa095413b.png)
