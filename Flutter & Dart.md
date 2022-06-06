@@ -72,7 +72,7 @@ https://dartpad.dev/?id=02d3c1600e40dd95d65af5ca6a3e4d16&null_safety=true
   - 예) helloWorld, whereAreYouFrom
 
 - 예시
-	```dart
+```dart
 main() {
   /// var : 처음 담은 값으로 자료형이 결정 됨
   var name = '철수';
