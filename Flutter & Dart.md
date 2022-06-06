@@ -59,7 +59,80 @@ https://dartpad.dev/?id=02d3c1600e40dd95d65af5ca6a3e4d16&null_safety=true
   `String?` : 문자 또는 비어있는(`null`) 상태일 수 있습니다.
 
   `final String` : 문자를 한 번 담은 뒤 재할당 불가능합니다.
+![image](https://user-images.githubusercontent.com/30613069/172089768-bbd5bec0-d08b-49d2-8d4a-e86155e232ed.png)
+<BR/>
 
+- List<T> 예시
+```DART
+void main() {
+  // 배열 생성
+  List<String> fruits = ["바나나"]; // 문자열만 담을 수 있는 배열을 생성합니다.
+  print(fruits);
+  print("fruits 개수 : ${fruits.length}"); // 개수 조회
+  
+-> 
+[바나나]
+fruits 개수 : 1
+
+  // 추가
+  print('--------- 추가 -----------');
+  fruits.add('딸기'); // 딸기 추가
+  print(fruits);
+  
+  fruits.add('배'); // 배 추가
+  print(fruits);
+  
+  // fruits.add(1); // fruits 타입이 List<String>이므로 문자열만 추가 가능
+  
+-> 
+[바나나, 딸기]
+[바나나, 딸기, 배]
+
+  // 조회
+  print('--------- 조회 -----------');
+  print(fruits[0]); // 배열에 0번째 원소 꺼내기
+  print(fruits[1]); // 배열에 1번째 원소 꺼내기
+  
+->
+바나나
+딸기
+  
+  // 수정
+  print('--------- 수정 -----------');
+  print(fruits);
+  fruits[0] = "키위"; // 0번째 바나나를 키위로 수정
+  print(fruits);
+  
+->
+[바나나, 딸기, 배]
+[키위, 딸기, 배]
+  
+  // 삭제
+  print('--------- 삭제 -----------');
+  fruits.remove('딸기'); // 딸기와 일치하는 값이 제거됩니다.
+  print(fruits);
+  fruits.removeAt(0); // 0번째 원소 삭제
+  print(fruits);
+  
+  ->
+[키위, 배]
+[배]
+
+  // 뭐든지 담을 수 있는 배열 생성
+  print('-------- dynamic --------');
+  List<dynamic> buckets = [1, "문자", [1, 2]]; // dynamic은 모든 타입을 포괄합니다.
+  print(buckets);
+  buckets.add(true); // 아무거나 담을 수 있음
+  print(buckets);
+  print(buckets[2]); // 2번째 배열 조회
+  print(buckets[2][0]); // 2번째 배열의 0번째 값 조회
+-> 
+[1, 문자, [1, 2]]
+[1, 문자, [1, 2], true]
+[1, 2]
+1
+}
+```
 - 변수명 (= 바구니 이름)
   💡 Dart의 변수명 만드는 규칙
   1. `영문` / `_` / `$` / `숫자`만 사용
@@ -119,4 +192,45 @@ main() {
   print(phone); // 010-0000-0000
   // phone = "010-1111-1111"; // final 때문에 이 코드는 실행 불가능
 ```
+  
+
+- 흐름 제어문
+  1) 조건문
+  ```dart
+  if (bool1) {
+    // bool1이 **true**면 실행
+  } else {
+    // bool1이 **false**면 실행
+  }
+  ```
+  - 조건문은 else if 형태로 계속해서 꼬리에 꼬리를 물 수 있습니다. 앞에서부터 하나 씩 비교해서 진행하면서 하나라도 true가 되어 실행되면, 뒤에 있는 조건문은 실행되지 않습니다.
+
+	2) 반복문
+	- 반복문은 특정한 코드를 반복해서 실행하도록 흐름을 제어하는 방법으로 FOR문 이라고 불리기도 합니다.
+	```dart
+	/// 💡 직접 입력하면 5줄을 작성해야 하지만,
+	hello 1
+	hello 2
+	hello 3
+	hello 4
+	hello 5
+	```
+	
+	```dart
+	/// 반복문을 사용하면 3줄로 작성할 수 있습니다.
+	for (int i = 0; i < 5; i++) {
+	    print('hello ${i + 1}');
+	}
+	```
+	
+	 * 5줄이 아니라 100만줄이 되어도, 반복문을 사용하면 3줄만에 가능합니다 👍👍
+	![image](https://user-images.githubusercontent.com/30613069/172138105-9f0d12cb-14b5-4c50-8265-46f40b135c84.png)
+
+	
+	3) 함수(Function)
+	- 함수(function) 는 여러 코드를 묶어둔 상자입니다.
+	![image](https://user-images.githubusercontent.com/30613069/172138130-484340d7-a9db-4ff3-aa11-e2601b810d23.png)
+
+	
+
 
