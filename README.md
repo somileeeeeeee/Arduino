@@ -2,14 +2,14 @@
 - Native App : 하나의 앱을 Android와 Ios를 각각의 개발 방법에 따라 개별로 두 번 만드는 방법을 네이티브 앱(Native App)이라 함.
 - 다른 언어로 두 번 앱을 제작해야 하기 때문에 개발 기간 및 공수가 많이 들어가나, 성능이 가장 빠르고 최신 기능을 빠르게 적용할 수 있음.
 - Android 
-	○ 프로그래밍 언어 : Java / Kotlin
-	○ 개발 툴 : Android Studio
-	○ Google에서 제공하는 Android SDK(Software Development Kit)를 이용하여 개발
+	- 프로그래밍 언어 : Java / Kotlin
+	- 개발 툴 : Android Studio
+	- Google에서 제공하는 Android SDK(Software Development Kit)를 이용하여 개발
 - iOS 
-	○ 프로그래밍 언어 : Objective-C / Swift
-	○ 개발 툴 : XCode
-	○ Apple에서 제공하는 iOS SDK(Software Development Kit)를 이용하여 개발
-	○ macOS 에서만 개발이 가능
+	- 프로그래밍 언어 : Objective-C / Swift
+	- 개발 툴 : XCode
+	- Apple에서 제공하는 iOS SDK(Software Development Kit)를 이용하여 개발
+	- macOS 에서만 개발이 가능
 	
 ![image](https://user-images.githubusercontent.com/30613069/172087189-3488e272-c193-4f9a-97ad-70eb72fc0d73.png)
 출처 : https://d2.naver.com/helloworld/3384599
