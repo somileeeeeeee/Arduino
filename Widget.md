@@ -157,60 +157,61 @@ class _MyAppState extends State<MyApp> {
             
             - **[[코드스니펫] DartPad margin & padding & alignment 학습](https://dartpad.dev/?id=eb20d38084c1ede129cab7bd98fa44e1&null_safety=true)**
               ![image](https://user-images.githubusercontent.com/30613069/172316141-e54fe131-5951-4657-9792-671b51e64467.png)
+<br/>
 
-         - 💡 EdgeInsets 사용법
-            ![image](https://user-images.githubusercontent.com/30613069/172316318-0257eeb2-fe20-4eac-9e50-455c45c8d210.png)
-            
-            - 전방위 모두 동일하게 적용
-                
-                ```dart
-                EdgeInsets.all(8)
-                ```
-                
-            - 특정 방위만 적용
-                
-                ```dart
-                EdgeInsets.only(
-                  left: 8,
-                  right: 8,
-                )
-                ```
-                
-            - 위아래 또는 좌우 적용
-                
-                ```dart
-                EdgeInsets.symmetric(
-                	vertical: 8,
-                	horizontal: 8,
-                )
-                ```
+- 💡 EdgeInsets 사용법
+![image](https://user-images.githubusercontent.com/30613069/172316318-0257eeb2-fe20-4eac-9e50-455c45c8d210.png)
 
-          - boxDecoration
-            > 💡 boxDecoration : Container의 테두리(border), 그림자, 색상 등을 꾸밀 때 사용합니다.
-            - **[[코드스니펫] DartPad BoxDecoration 학습](https://dartpad.dev/?id=c68290f876ce3d711f32ce66f21b2868&null_safety=true)**
-            ![image](https://user-images.githubusercontent.com/30613069/172316515-a2721303-a627-4e36-84ab-d6fee7bd8063.png)
+  - 전방위 모두 동일하게 적용
 
-            > 💡 아래와 같이 color와 decoration을 동시에 사용하면 에러가 나옵니다.
-            
-            ```json
-            Container(
-            	color: Colors.amber,
-              decoration: BoxDecoration(),
-            ),
-            ```
-            
-            > DartPad에서는 위 상황에서 애러 메세지가 안나오지만, 실제 VSCode에서 코딩할 때에는 `color와 decoration을 동시에 사용할 수 없습니다`고 에러 메세지가 나옵니다
-            ![image](https://user-images.githubusercontent.com/30613069/172316584-a15d4591-fd35-4e82-818f-215eb868d431.png)
-            
-            * 에러가 나지않게 하려면 아래와 같이 color를 decoration 안에 넣으면 됩니다.
-            
-            ```json
-            Container(
-            	decoration: BoxDecoration(
-            		color: Colors.amber,
-            	),
-            ),
-            ```      
+  ```dart
+  EdgeInsets.all(8)
+  ```
+
+  - 특정 방위만 적용
+
+    ```dart
+    EdgeInsets.only(
+      left: 8,
+      right: 8,
+    )
+    ```
+
+  - 위아래 또는 좌우 적용
+
+    ```dart
+    EdgeInsets.symmetric(
+      vertical: 8,
+      horizontal: 8,
+    )
+    ```
+
+  - boxDecoration
+    > 💡 boxDecoration : Container의 테두리(border), 그림자, 색상 등을 꾸밀 때 사용합니다.
+    - **[[코드스니펫] DartPad BoxDecoration 학습](https://dartpad.dev/?id=c68290f876ce3d711f32ce66f21b2868&null_safety=true)**
+    ![image](https://user-images.githubusercontent.com/30613069/172316515-a2721303-a627-4e36-84ab-d6fee7bd8063.png)
+
+    > 💡 아래와 같이 color와 decoration을 동시에 사용하면 에러가 나옵니다.
+
+    ```json
+    Container(
+      color: Colors.amber,
+      decoration: BoxDecoration(),
+    ),
+    ```
+
+> DartPad에서는 위 상황에서 애러 메세지가 안나오지만, 실제 VSCode에서 코딩할 때에는 `color와 decoration을 동시에 사용할 수 없습니다`고 에러 메세지가 나옵니다
+![image](https://user-images.githubusercontent.com/30613069/172316584-a15d4591-fd35-4e82-818f-215eb868d431.png)
+
+* 에러가 나지않게 하려면 아래와 같이 color를 decoration 안에 넣으면 됩니다.
+
+```json
+Container(
+  decoration: BoxDecoration(
+    color: Colors.amber,
+  ),
+),
+```      
     - Icon
           - [**[코드스니펫] DartPad Icon 학습**](https://dartpad.dev/?id=c9873d52cdf3902fd378b49346fad894&null_safety=true)
           ![image](https://user-images.githubusercontent.com/30613069/172317525-66f760d8-f6c2-474c-bbc0-811e7ec74f1a.png)
