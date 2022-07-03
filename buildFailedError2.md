@@ -50,5 +50,33 @@ https://visualstudio.microsoft.com/ko/downloads/
 
 ![image](https://user-images.githubusercontent.com/30613069/177029938-5ac28340-6e6f-4736-ab1e-1cb91a6fbf6e.png)
 
+## 또 다른 빌드ㅇㅔ러,,,,
+: 엄청난 많은 에러가 났는데,,,, demon 어쩌고 저쩌고
+``` cmd
+FAILURE: Build failed with an exception.
 
-**
+
+* What went wrong:
+
+Unable to start the daemon process.
+
+This problem might be caused by incorrect configuration of the daemon.
+
+For example, an unrecognized jvm option is used.
+
+Please refer to the User Manual chapter on the daemon at https://docs.gradle.org/5.6.2/userguide/gradle_daemon.html
+
+Process command line: C:\Program Files (x86)\Java\jre1.8.0_221\bin\java.exe -Xmx1536M -Dfile.encoding=windows-1252 -Duser.country=US -Duser.language=en -Duser.variant -cp C:\Users\ajoris\.gradle\wrapper\dists\gradle-5.6.2-all\9st6wgf78h16so49nn74lgtbb\gradle-5.6.2\lib\gradle-launcher-5.6.2.jar org.gradle.launcher.daemon.bootstrap.GradleDaemon 5.6.2
+
+Please read the following process output to find out more:
+```
+![image](https://user-images.githubusercontent.com/30613069/177030514-3e979e38-40d4-4633-aeba-f3fa60b4372e.png)
+From:
+
+org.gradle.jvmargs=-Xmx1536M
+
+To:
+
+org.gradle.jvmargs=-Xmx1024M
+-> ㅣㅇ렇게 용량을 바꿔주었떠니...
+드디어 빌드 성공!!!!!!!!!!!!!!!!!!!!!!!! ❣
