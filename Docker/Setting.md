@@ -45,3 +45,5 @@ PS C:\Users\user> netstat -ano | findstr 3306
 > netstat -ano | findstr 3306 <- 명령어 이용해 3306 포트 사용하고 있는 게 있는 
 > 위 에러는 3306포트를 이미 사용하고 있어서 나는 에러, 그래서 다시 3307 포트로 재지정함.  
   
+## 6. 완성
+  ![image](https://user-images.githubusercontent.com/30613069/189900384-fa5e6794-bbb6-4359-bd12-e6127d6da032.png)
