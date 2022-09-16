@@ -1,4 +1,4 @@
-# mysqldb 컨테이너에 bash 쉘로 연결 후 컨테이너 IP 확인을 확인하려다 해결하는 에러
+# mysqldb 컨테이너에 bash 쉘로 연결 후 컨테이너 IP command not found 에러
 ## sh: ip: command not found
 ### 1. 명령어가 설치되어 있지 않아 나는 에러라고 발견
 - ip 명령어가 존재하지 않는 오류가 발생한것으로 관련된 라이브러리를 설치해준다.
@@ -58,6 +58,12 @@ E: Package 'iproute' has no installation candidate
 -> 위와 같이 떠서 iproute2로 재설치 진행
 
 6. iproute2 추가 ->  apt-get install iproute2
+
+7. 아직 bash 내에서 ip command not found 에러 있음...... 어떻게 해결하는 지 모르겠으나
+
+8. docker inspect container_id(나의 경우 mysqldb)
+![image](https://user-images.githubusercontent.com/30613069/190546564-86870d16-f08f-4233-9268-1e0c216860ee.png)
+-> 확인가능해서 그냥 이걸로 확인/....
 
 
 출처: https://smoh.tistory.com/284 [Simple is Beautiful.:티스토리]
